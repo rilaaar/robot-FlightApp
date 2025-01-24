@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.3 on win32)" generated="2025-01-24T16:20:21.045331" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="D:\Ra\Sanbercode\robot-FlightApp\Suites\login.robot">
+<test id="s1-t1" name="User Should be able to login with valid data" line="22">
+<kw name="Open Flight Application">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>remote_url=http://127.0.0.1:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=11.0</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>app=D:\\Ra\\Sanbercode\\robot-FlightApp\\Apps\\flightApp (2).apk</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-01-24T16:20:21.689286" elapsed="27.329499"/>
+</kw>
+<status status="PASS" start="2025-01-24T16:20:21.683888" elapsed="27.335906"/>
+</kw>
+<kw name="Verify Home Screen Appears">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-24T16:20:49.375979" level="INFO">criteria is com.example.myapplication:id/imageView4</msg>
+<arg>locator=com.example.myapplication:id/imageView4</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-24T16:20:49.021162" elapsed="0.354817"/>
+</kw>
+<status status="PASS" start="2025-01-24T16:20:49.019794" elapsed="0.356185"/>
+</kw>
+<kw name="Close Flight Application">
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2025-01-24T16:20:49.378867" elapsed="0.997443"/>
+</kw>
+<status status="PASS" start="2025-01-24T16:20:49.377428" elapsed="0.998882"/>
+</kw>
+<status status="PASS" start="2025-01-24T16:20:21.681018" elapsed="28.696292"/>
+</test>
+<status status="PASS" start="2025-01-24T16:20:21.049072" elapsed="29.329239"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login" id="s1" pass="1" fail="0" skip="0">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
