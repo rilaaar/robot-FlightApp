@@ -10,7 +10,8 @@ Open Flight Application
     ...    platformName=Android     
     ...    platformVersion=11.0     
     ...    deviceName=emulator-5554     
-    ...    app=D:\\Ra\\Sanbercode\\robot-FlightApp\\Apps\\flightApp (2).apk
+    ...    appPackage=com.example.myapplication
+    ...    appActivity=com.example.myapplication.MainActivity
 
 Verify Home Screen Appears 
     Wait Until Element Is Visible     locator=com.example.myapplication:id/imageView4

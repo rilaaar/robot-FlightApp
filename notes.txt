@@ -1,0 +1,15 @@
+# command to run : python -m robot Suites\login.robot
+
+Configure robot.pythonpath: 
+1. You may need to add the path to the installed libraries in your robot.pythonpath setting in VS Code.
+2. Locate the Installed Libraries Path: Run the following to find where AppiumLibrary is installed:
+    pip show robotframework-appiumlibrary
+3. Update VS Code Settings:
+    Open VS Code settings (Ctrl + ,).
+    Search for robot.pythonpath.
+    Add the library's installation path, e.g.,:
+        "robot.pythonpath": [
+              "C:\\Python312\\Lib\\site-packages"
+        ]
+4. Save the settings.
+
