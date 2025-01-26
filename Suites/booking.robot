@@ -15,8 +15,8 @@ Test Teardown       Close Flight Application
 User Success Booking Flight Ticket From New York To London
     Go to Booking Page
     Verify Book Flight Page
-    Select From New York City
-    Select To London City 
+    Select Departure From New York City
+    Select Destination To London City 
     Select Economy Class
     Select Start Date
     Select End Date
@@ -24,8 +24,8 @@ User Success Booking Flight Ticket From New York To London
     Choose Date 
     Click Button OK 
     Verify Confirm Booking Page
-    Verify From City
-    Verify To City
-    Select Price
+    Verify Departure City
+    Verify Destination City
+    Select Price 1
     Click Button Confirm 
     Verify ID Reservation Ticket 

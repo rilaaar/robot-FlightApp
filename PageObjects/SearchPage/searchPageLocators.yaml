@@ -3,4 +3,4 @@ verifyFieldSearch_searchPage : com.example.myapplication:id/flight_number
 fieldInputFlightNum_searchPage : com.example.myapplication:id/flight_number
 btnSearchFilghtNum_searchPage : com.example.myapplication:id/searchFlight
 btnSendToEmail_searchPage : 	com.example.myapplication:id/fab
-verifyScheduleBooking : /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.TableLayout/android.widget.TableRow[2]/android.widget.TextView[1]
+verifyScheduleBooking : //android.widget.TableRow[2]/android.widget.TextView[1]

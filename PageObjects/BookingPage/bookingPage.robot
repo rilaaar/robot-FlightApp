@@ -3,7 +3,10 @@ Resource            ../LoginPage/loginPage.robot
 Variables           bookingPageLocators.yaml
 Variables           bookingConfirmPageLocators.yaml
 
+#Library              datetime
 
+*** Variables ***
+#${TARGET_DATE}    ${DateTime.AddDaysToDate("2019-08-01", 0, result_format="dd MMMM yyyy")}
 
 *** Keywords ***
 Go to Booking Page
@@ -13,12 +16,12 @@ Go to Booking Page
 Verify Book Flight Page
     Wait Until Element Is Visible    ${verifyBookFlightPage_bookingPage}
 
-Select From New York City
+Select Departure From New York City
     Click Element                    ${fromCity_bookinPage}
     Wait Until Element Is Visible    ${newyorkCity_bookinPage}
     Click Element                    ${newyorkCity_bookinPage}
 
-Select To London City 
+Select Destination To London City 
     Click Element                    ${toCity_bookinPage}
     Wait Until Element Is Visible    ${londonCity_bookinPage}
     Click Element                    ${londonCity_bookinPage}
@@ -48,13 +51,13 @@ Click Button OK
 Verify Confirm Booking Page
     Wait Until Element Is Visible    ${verifyConfirmBookingPage_bookingConfirmPage}
 
-Verify From City
+Verify Departure City
     Wait Until Element Is Visible    ${verifyFromCity_bookingConfirmPage}
 
-Verify To City
+Verify Destination City
     Wait Until Element Is Visible    ${verifyToCity_bookingConfirmPage}
 
-Select Price
+Select Price 1
     Click Element                    ${price1__bookingConfirmPage}
 
 Click Button Confirm 
