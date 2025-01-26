@@ -1,8 +1,11 @@
-bookPageDirec_bookingPage : com.example.myapplication:id/button5
+bookPageDirec_bookingPage : com.example.myapplication:id/book
 verifyBookFlightPage_bookingPage : com.example.myapplication:id/book_flight
 fromCity_bookinPage : com.example.myapplication:id/spinnerFrom
+newyorkCity_bookinPage : /hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]
 toCity_bookinPage : com.example.myapplication:id/spinnerTo
+londonCity_bookinPage : /hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]
 class_bookingPage : com.example.myapplication:id/spinnerClass
+enonomyClass_bookinPage : /hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]
 startDate_bookingPage : com.example.myapplication:id/textStartDate
 verifyChooseDate_bookingPage : android:id/date_picker_header_date
 chooseDate_bookingPage : //android.view.View[@content-desc="01 August 2019"]

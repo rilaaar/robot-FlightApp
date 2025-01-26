@@ -12,15 +12,20 @@ Test Teardown       Close Flight Application
 
 
 *** Test Cases ***
-User Succes Booking Flight Ticket
+User Success Booking Flight Ticket From New York To London
     Go to Booking Page
     Verify Book Flight Page
-    Select From City
-    Select To City
-    Select Class
+    Select From New York City
+    Select To London City 
+    Select Economy Class
     Select Start Date
     Select End Date
     Verify Choose Date Screen
     Choose Date 
     Click Button OK 
     Verify Confirm Booking Page
+    Verify From City
+    Verify To City
+    Select Price
+    Click Button Confirm 
+    Verify ID Reservation Ticket 

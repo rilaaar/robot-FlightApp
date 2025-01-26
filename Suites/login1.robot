@@ -12,10 +12,12 @@ Test Teardown       Close Flight Application
 
 *** Test Cases ***
 User Should be able to login with valid data
+    [Tags]    run
     Login With Valid Credentials
     Verify User active name
 
 User Failed Login with invalid data
+    [Tags]    run
     Login With Invalid Credentials
     Verify User Stay in Login Screen 
 
