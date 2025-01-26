@@ -6,7 +6,9 @@ Variables               loginPageLocators.yaml
 
 *** Variables ***
 ${VALID_EMAIL}               support@ngendigital.com
+${INVALID_EMAIL}             support@ngendigital.co.id
 ${VALID_PASSWORD}            abc123
+${INVALID_PASSWORD}          abc12345
 
 *** Keywords ***
 Verify Login Appears
@@ -25,6 +27,14 @@ Input User Password On Login Page
 Click Sign In Button On Login Page
     Click Element    ${btnSignIn_loginPage}
 
+Verify User active name 
+    Wait Until Element Is Visible      ${userActiveName_loginPage}
+
+Verify User Stay in Login Screen 
+    Wait Until Element Is Visible      ${btnSignIn_loginPage}
+
+
+# SCENARIO
 Login With Valid Credentials
     [Arguments]    ${email}=${VALID_EMAIL}    ${password}=${VALID_PASSWORD}
     Verify Home Page Appears
@@ -34,5 +44,11 @@ Login With Valid Credentials
     Input User Password On Login Page  ${password}
     Click Sign In Button On Login Page
 
-Verify User active name 
-    Wait Until Element Is Visible      ${userActiveName_loginPage}
+Login With Invalid Credentials
+    [Arguments]    ${email}=${INVALID_EMAIL}    ${password}=${INVALID_PASSWORD}
+    Verify Home Page Appears
+    Click Sign In Button On Home Page
+    Verify Login Appears
+    Input User Email On Login Page     ${email}
+    Input User Password On Login Page  ${password}
+    Click Sign In Button On Login Page

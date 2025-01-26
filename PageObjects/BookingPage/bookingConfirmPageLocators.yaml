@@ -1,1 +1,8 @@
 verifyConfirmBookingPage_bookingConfirmPage : com.example.myapplication:id/textView6
+verifyFromCity_bookingConfirmPage  : com.example.myapplication:id/textFromCity
+verifyToCity_bookingConfirmPage  : com.example.myapplication:id/textToCity
+price1__bookingConfirmPage : com.example.myapplication:id/price1
+price2__bookingConfirmPage : com.example.myapplication:id/price2
+price3__bookingConfirmPage : com.example.myapplication:id/price3
+btnConfirm__bookingConfirmPage : com.example.myapplication:id/confirm_order
+verifyReservationNumber_bookingConfirmPage : com.example.myapplication:id/checkedTextView

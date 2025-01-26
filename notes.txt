@@ -1,4 +1,4 @@
-# command to run : python -m robot Suites\login.robot
+# command to run : python -m robot Suites
 
 Configure robot.pythonpath: 
 1. You may need to add the path to the installed libraries in your robot.pythonpath setting in VS Code.
