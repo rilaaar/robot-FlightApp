@@ -13,3 +13,11 @@ Configure robot.pythonpath:
         ]
 4. Save the settings.
 
+
+To only run tests with a specific tag, use the --include option when executing the test suite.
+    using tag : [Tags]    run
+    Command: python -m robot --include run path/to/test/folder
+
+To skip tests with a specific tag, use the --exclude option.
+    using tag : [Tags]    skip
+    Command: python -m robot --exclude skip path/to/test/folder

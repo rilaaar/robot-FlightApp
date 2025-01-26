@@ -16,3 +16,8 @@ User Should be able to login with valid data
 User Failed Login with invalid data
     Login With Invalid Credentials
     Verify User Stay in Login Screen 
+
+User Failed Login when empty field email and password 
+    [Tags]    run
+    Empty field email and password
+    Verify User Stay in Login Screen 

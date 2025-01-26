@@ -52,3 +52,13 @@ Login With Invalid Credentials
     Input User Email On Login Page     ${email}
     Input User Password On Login Page  ${password}
     Click Sign In Button On Login Page
+
+Empty field email and password
+    [Arguments]    ${email}=     ${password}= 
+    Verify Home Page Appears
+    Click Sign In Button On Home Page
+    Verify Login Appears
+    Input User Email On Login Page     ${email}
+    Input User Password On Login Page  ${password}
+    Click Sign In Button On Login Page
+    
