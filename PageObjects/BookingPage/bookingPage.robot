@@ -15,20 +15,25 @@ Verify Book Flight Page
 
 Select From New York City
     Click Element                    ${fromCity_bookinPage}
+    Wait Until Element Is Visible    ${newyorkCity_bookinPage}
     Click Element                    ${newyorkCity_bookinPage}
 
 Select To London City 
     Click Element                    ${toCity_bookinPage}
+    Wait Until Element Is Visible    ${londonCity_bookinPage}
     Click Element                    ${londonCity_bookinPage}
 
 Select Economy Class
     Click Element                    ${class_bookingPage}
-    Click Element                    ${enonomyClass_bookinPage}
+    Wait Until Element Is Visible    ${economyClass_bookinPage}
+    Click Element                    ${economyClass_bookinPage}
 
 Select Start Date
+    Wait Until Element Is Visible    ${startDate_bookingPage}
     Click Element                    ${startDate_bookingPage}
 
 Select End Date
+    Wait Until Element Is Visible    ${endDate_bookingPage}
     Click Element                    ${endDate_bookingPage}
 
 Verify Choose Date Screen
