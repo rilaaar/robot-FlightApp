@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.12.3 on win32)" generated="2025-01-26T12:39:20.076678" rpa="false" schemaversion="5">
-<suite id="s1" name="Login1" source="D:\Ra\Sanbercode\robot-FlightApp\Suites\login1.robot">
-<test id="s1-t1" name="User Failed Login when empty field email and password" line="20">
-<kw name="Run Keyword" owner="BuiltIn" type="SETUP">
+<robot generator="Robot 7.2 (Python 3.12.3 on win32)" generated="2025-01-26T14:20:24.563500" rpa="false" schemaversion="5">
+<suite id="s1" name="Booking" source="D:\Ra\Sanbercode\robot-FlightApp\Suites\booking.robot">
+<test id="s1-t1" name="User Succes Booking Flight Ticket" line="15">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
 <kw name="Open Flight Application" owner="base">
 <kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-26T14:21:06.773598" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-26T14:21:06.773598" elapsed="0.013547">No application is open</status>
+</kw>
+<msg time="2025-01-26T14:21:06.790648" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-26T14:21:06.791661" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\rilaa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell pm clear com.example.myapplication' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\rilaa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell pm clear com.example.myapplication' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (C:\Users\rilaa\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\rilaa\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</msg>
 <arg>remote_url=${REMOTE_URL}</arg>
 <arg>platformName=${PLAFORM_NAMA}</arg>
 <arg>platformVersion=${PLAFORM_VERSION}</arg>
@@ -18,131 +29,67 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2025-01-26T12:39:20.709809" elapsed="42.084540"/>
+<status status="FAIL" start="2025-01-26T14:20:25.370668" elapsed="41.422503">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\rilaa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell pm clear com.example.myapplication' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\rilaa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell pm clear com.example.myapplication' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (C:\Users\rilaa\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\rilaa\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
 </kw>
-<status status="PASS" start="2025-01-26T12:39:20.708809" elapsed="42.089577"/>
+<status status="FAIL" start="2025-01-26T14:20:25.370154" elapsed="41.424027">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\rilaa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell pm clear com.example.myapplication' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\rilaa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell pm clear com.example.myapplication' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (C:\Users\rilaa\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\rilaa\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
 </kw>
 <arg>Open Flight Application</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<status status="PASS" start="2025-01-26T12:39:20.707802" elapsed="42.090584"/>
-</kw>
-<kw name="Empty field email and password" owner="loginPage">
-<kw name="Verify Home Page Appears" owner="homePage">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-01-26T12:40:03.231227" level="INFO">criteria is com.example.myapplication:id/imageView4</msg>
-<arg>${logo_homePage}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-01-26T12:40:02.809281" elapsed="0.421946"/>
-</kw>
-<status status="PASS" start="2025-01-26T12:40:02.808164" elapsed="0.423063"/>
-</kw>
-<kw name="Click Sign In Button On Home Page" owner="homePage">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-01-26T12:40:03.303020" level="INFO">criteria is com.example.myapplication:id/login</msg>
-<arg>${btnSignIn_homePage}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-01-26T12:40:03.232228" elapsed="0.070792"/>
-</kw>
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-01-26T12:40:03.306095" level="INFO">Clicking element 'com.example.myapplication:id/login'.</msg>
-<msg time="2025-01-26T12:40:03.560957" level="INFO">criteria is com.example.myapplication:id/login</msg>
-<arg>${btnSignIn_homePage}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-01-26T12:40:03.303020" elapsed="0.257937"/>
-</kw>
-<status status="PASS" start="2025-01-26T12:40:03.231227" elapsed="0.329730"/>
-</kw>
-<kw name="Verify Login Appears" owner="loginPage">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-01-26T12:40:04.869632" level="INFO">criteria is com.example.myapplication:id/username
-criteria is com.example.myapplication:id/username
-criteria is com.example.myapplication:id/username</msg>
-<arg>${fieldEmail_loginPage}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-01-26T12:40:03.562976" elapsed="1.306656"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-01-26T12:40:05.170107" level="INFO">criteria is com.example.myapplication:id/password</msg>
-<arg>${fieldPassword_loginPage}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-01-26T12:40:04.872028" elapsed="0.298079"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-01-26T12:40:05.237911" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
-<arg>${btnSignIn_loginPage}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-01-26T12:40:05.170107" elapsed="0.067804"/>
-</kw>
-<status status="PASS" start="2025-01-26T12:40:03.562976" elapsed="1.674935"/>
-</kw>
-<kw name="Input User Email On Login Page" owner="loginPage">
-<kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-01-26T12:40:05.240780" level="INFO">Typing text '' into text field 'com.example.myapplication:id/username'</msg>
-<msg time="2025-01-26T12:40:05.328528" level="INFO">criteria is com.example.myapplication:id/username</msg>
-<arg>${fieldEmail_loginPage}</arg>
-<arg>${email}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-01-26T12:40:05.237911" elapsed="0.090617"/>
-</kw>
-<arg>${email}</arg>
-<status status="PASS" start="2025-01-26T12:40:05.237911" elapsed="0.090617"/>
-</kw>
-<kw name="Input User Password On Login Page" owner="loginPage">
-<kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-01-26T12:40:05.337580" level="INFO">Typing text '' into text field 'com.example.myapplication:id/password'</msg>
-<msg time="2025-01-26T12:40:05.889693" level="INFO">criteria is com.example.myapplication:id/password</msg>
-<arg>${fieldPassword_loginPage}</arg>
-<arg>${password}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<status status="PASS" start="2025-01-26T12:40:05.330547" elapsed="0.559146"/>
-</kw>
-<arg>${password}</arg>
-<status status="PASS" start="2025-01-26T12:40:05.329543" elapsed="0.560660"/>
-</kw>
-<kw name="Click Sign In Button On Login Page" owner="loginPage">
-<kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-01-26T12:40:05.894226" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
-<msg time="2025-01-26T12:40:06.498190" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
-<arg>${btnSignIn_loginPage}</arg>
-<doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2025-01-26T12:40:05.890203" elapsed="0.607987"/>
-</kw>
-<status status="PASS" start="2025-01-26T12:40:05.890203" elapsed="0.608988"/>
-</kw>
-<status status="PASS" start="2025-01-26T12:40:02.804372" elapsed="3.694819"/>
-</kw>
-<kw name="Verify User Stay in Login Screen" owner="loginPage">
-<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
-<msg time="2025-01-26T12:40:07.127533" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
-<arg>${btnSignIn_loginPage}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" start="2025-01-26T12:40:06.501631" elapsed="0.625902"/>
-</kw>
-<status status="PASS" start="2025-01-26T12:40:06.501631" elapsed="0.625902"/>
+<arg>AND</arg>
+<arg>Login With Valid Credentials</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2025-01-26T14:20:25.369148" elapsed="41.425033">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\rilaa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell pm clear com.example.myapplication' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\rilaa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell pm clear com.example.myapplication' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (C:\Users\rilaa\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\rilaa\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
 </kw>
 <kw name="Close Flight Application" owner="base" type="TEARDOWN">
 <kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-26T14:21:06.797180" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-26T14:21:06.797180" elapsed="0.002004">No application is open</status>
+</kw>
+<msg time="2025-01-26T14:21:06.802706" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-26T14:21:06.803707" level="FAIL">No application is open</msg>
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" start="2025-01-26T12:40:07.129533" elapsed="1.706953"/>
+<status status="FAIL" start="2025-01-26T14:21:06.797180" elapsed="0.007527">No application is open</status>
 </kw>
-<status status="PASS" start="2025-01-26T12:40:07.128537" elapsed="1.708968"/>
+<status status="FAIL" start="2025-01-26T14:21:06.796188" elapsed="0.008519">No application is open</status>
 </kw>
-<tag>run</tag>
-<status status="PASS" start="2025-01-26T12:39:20.706294" elapsed="48.131211"/>
+<status status="FAIL" start="2025-01-26T14:20:25.367149" elapsed="41.437558">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\rilaa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell pm clear com.example.myapplication' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\rilaa\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell pm clear com.example.myapplication' timed out after 20000ms'. Try to increase the 20000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (C:\Users\rilaa\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\rilaa\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+
+Also teardown failed:
+No application is open</status>
 </test>
-<status status="PASS" start="2025-01-26T12:39:20.079679" elapsed="48.776452"/>
+<doc>Execute scenario user Reservation Flight Ticket</doc>
+<status status="FAIL" start="2025-01-26T14:20:24.571773" elapsed="42.238245"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">run</stat>
 </tag>
 <suite>
-<stat name="Login1" id="s1" pass="1" fail="0" skip="0">Login1</stat>
+<stat name="Booking" id="s1" pass="0" fail="1" skip="0">Booking</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2025-01-26T14:21:06.790648" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-26T14:21:06.802706" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
 </errors>
 </robot>

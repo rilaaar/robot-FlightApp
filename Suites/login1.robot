@@ -1,4 +1,6 @@
 *** Settings ***
+Documentation        Execute scenario user login on Flight APP
+
 Resource            ../PageObjects/Base/base.robot
 Resource            ../PageObjects/HomePage/homePage.robot
 Resource            ../PageObjects/LoginPage/loginPage.robot

@@ -1,6 +1,6 @@
 bookPageDirec_bookingPage : com.example.myapplication:id/button5
 verifyBookFlightPage_bookingPage : com.example.myapplication:id/book_flight
-formCity_bookinPage : com.example.myapplication:id/spinnerFrom
+fromCity_bookinPage : com.example.myapplication:id/spinnerFrom
 toCity_bookinPage : com.example.myapplication:id/spinnerTo
 class_bookingPage : com.example.myapplication:id/spinnerClass
 startDate_bookingPage : com.example.myapplication:id/textStartDate
