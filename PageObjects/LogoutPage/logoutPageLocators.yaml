@@ -1,1 +1,2 @@
 btnLogout_logoutPage : com.example.myapplication:id/login
+homePageLogo_logoutPage : com.example.myapplication:id/imageView4
