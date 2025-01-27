@@ -57,7 +57,7 @@ Verify Departure City
 Verify Destination City
     Wait Until Element Is Visible    ${verifyToCity_bookingConfirmPage}
 
-Select Price 1
+Select Price $1860
     Click Element                    ${price1__bookingConfirmPage}
 
 Click Button Confirm 

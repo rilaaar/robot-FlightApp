@@ -12,7 +12,7 @@ Test Teardown       Close Flight Application
 
 
 *** Test Cases ***
-User Success Booking Flight Ticket From New York To London
+Success Booking Flight Ticket From New York To London
     Go to Booking Page
     Verify Book Flight Page
     Select Departure From New York City
@@ -26,6 +26,6 @@ User Success Booking Flight Ticket From New York To London
     Verify Confirm Booking Page
     Verify Departure City
     Verify Destination City
-    Select Price 1
+    Select Price $1860
     Click Button Confirm 
     Verify ID Reservation Ticket 
