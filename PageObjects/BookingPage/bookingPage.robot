@@ -3,10 +3,7 @@ Resource            ../LoginPage/loginPage.robot
 Variables           bookingPageLocators.yaml
 Variables           bookingConfirmPageLocators.yaml
 
-#Library              datetime
 
-*** Variables ***
-#${TARGET_DATE}    ${DateTime.AddDaysToDate("2019-08-01", 0, result_format="dd MMMM yyyy")}
 
 *** Keywords ***
 Go to Booking Page
@@ -32,21 +29,25 @@ Select Economy Class
     Click Element                    ${economyClass_bookinPage}
 
 Select Start Date
-    Wait Until Element Is Visible    ${startDate_bookingPage}
     Click Element                    ${startDate_bookingPage}
+    Wait Until Element Is Visible    ${verifyChooseDate_bookingPage}
+    Click Element                    ${chooseDate_bookingPage}
+    Click Element                    ${btnOkChooseDate_bookinPage}
 
 Select End Date
-    Wait Until Element Is Visible    ${endDate_bookingPage}
     Click Element                    ${endDate_bookingPage}
-
-Verify Choose Date Screen
-    Click Element                    ${verifyChooseDate_bookingPage}
-
-Choose Date 
+    Wait Until Element Is Visible    ${verifyChooseDate_bookingPage}
     Click Element                    ${chooseDate_bookingPage}
-
-Click Button OK 
     Click Element                    ${btnOkChooseDate_bookinPage}
+
+Click just Flight Option 
+    Click Element                    ${justFlightOps_bookinPage}      
+
+Click +- One day Option 
+    Click Element                    ${oneDayOps_bookinPage}
+
+Click Button Confirm Booking
+    Click Element                    ${btnBooking_bookinPage}
 
 Verify Confirm Booking Page
     Wait Until Element Is Visible    ${verifyConfirmBookingPage_bookingConfirmPage}

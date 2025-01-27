@@ -20,9 +20,9 @@ Success Booking Flight Ticket From New York To London
     Select Economy Class
     Select Start Date
     Select End Date
-    Verify Choose Date Screen
-    Choose Date 
-    Click Button OK 
+    Click just Flight Option 
+    Click +- One day Option 
+    Click Button Confirm Booking 
     Verify Confirm Booking Page
     Verify Departure City
     Verify Destination City
