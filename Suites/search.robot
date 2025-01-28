@@ -16,3 +16,9 @@ Success Check Schedule FLight with Valid Code
     Input Valid Flight Number
     Click Button Search 
     Verify Schedule Booking 
+
+Failed Check Schedule FLight with Invalid Code
+    Go to Search Page
+    Input Invalid Flight Number
+    Click Button Search 
+    Stay In Search Page Screen 

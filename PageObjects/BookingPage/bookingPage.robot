@@ -61,6 +61,30 @@ Verify Destination City
 Select Price $1860
     Click Element                    ${price1__bookingConfirmPage}
 
+Select Price $2055
+    Click Element                    ${price2__bookingConfirmPage}
+
+Select Price $1980
+    Click Element                    ${price3__bookingConfirmPage}
+
+Select Price $1755
+    Click Element                    ${price4__bookingConfirmPage}
+
+Select Price $1990
+    Click Element                    ${price5__bookingConfirmPage}
+
+Select Price $2084
+    Click Element                    ${price6__bookingConfirmPage}
+
+Select Price $1798
+    Click Element                    ${price7__bookingConfirmPage}
+
+Select Price $2015
+    Click Element                    ${price8__bookingConfirmPage}
+
+Select Price $2250
+    Click Element                    ${price9__bookingConfirmPage}
+
 Click Button Confirm 
     Click Element                    ${btnConfirm__bookingConfirmPage}
 

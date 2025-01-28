@@ -5,6 +5,7 @@ Variables                   searchPageLocators.yaml
 
 *** Variables ***
 ${VALID_CODEBOOKING}        DA935
+${INVALID_CODEBOOKING}      AB935
 
 
 *** Keywords ***
@@ -27,3 +28,10 @@ Verify Schedule Booking
 Input Valid Flight Number
     [Arguments]     ${flightNumber}=${VALID_CODEBOOKING}
     Input Flight Number             ${flightNumber}
+
+Input Invalid Flight Number
+    [Arguments]     ${flightNumber}=${INVALID_CODEBOOKING}
+    Input Flight Number             ${flightNumber}
+
+Stay In Search Page Screen 
+    Wait Until Element Is Visible   ${verifyFieldSearch_searchPage}
